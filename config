@@ -1,0 +1,18 @@
+#url=jdbc:postgresql://localhost:5432/growing
+user=apps
+passwd=v,4)5Y|5G1PzF+fL
+ip=10.0.3.26
+port=7531
+database=growing
+
+#user=fangdonghao
+#passwd=
+#ip=localhost
+#port=5432
+#database=growing
+
+#LDA related
+lda_path=/Users/Spirit/Documents/workspace/work/lda-model
+lda_modelName=model-final
+lda_threshold=0.05
+lda_max_words=3
