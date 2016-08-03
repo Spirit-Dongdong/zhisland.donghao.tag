@@ -211,6 +211,8 @@ public class PrepareTag {
     public static String[] articlePath = {
             "/home/Spirit/tag_corpus/news",
             "/home/Spirit/tag_corpus/article",
+//            "/Users/Spirit/PycharmProjects/python-crawler/tag/news",
+//            "/Users/Spirit/PycharmProjects/python-crawler/tag/article",
     };
 
     public static String preprocess(String contentSrc) {
@@ -229,7 +231,7 @@ public class PrepareTag {
 
     public static void go() {
         ConfigLoader loader = new ConfigLoader("config");
-        String outputFile = loader.getString("");
+        String outputFile = loader.getString("lda_corpus_output");
 
         int count = 0;
         StringBuffer sb = new StringBuffer();
