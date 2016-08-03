@@ -1,10 +1,3 @@
-#url=jdbc:postgresql://localhost:5432/growing
-user=apps
-passwd=v,4)5Y|5G1PzF+fL
-ip=10.0.3.26
-port=7531
-database=growing
-
 #user=fangdonghao
 #passwd=
 #ip=localhost
@@ -12,7 +5,13 @@ database=growing
 #database=growing
 
 #LDA related
-lda_path=/Users/Spirit/Documents/workspace/work/lda-model
+lda_path=/Users/Spirit/Documents/workspace/tag/lda-model
 lda_modelName=model-final
 lda_threshold=0.05
 lda_max_words=3
+lda_corpus_output=/home/Spirit/lda2.txt
+
+#db_related
+mysql_url=jdbc:mysql://192.168.2.96:3306/zh_bms_cms?&useUnicode=true&characterEncoding=UTF-8
+mysql_user=root
+mysql_passwd=akQq5csSXI5Fsmbx5U4c
