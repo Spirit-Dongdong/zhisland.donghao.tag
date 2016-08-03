@@ -7,10 +7,7 @@ import java.util.Map;
  * Created by Spirit on 16/6/29.
  */
 public class ConfigLoader {
-
     private Map<String, String> configPairs;
-
-
 
     public ConfigLoader(String path) {
         configPairs = new HashMap<String, String>();
@@ -19,7 +16,7 @@ public class ConfigLoader {
         for (String line : lines) {
             if (line.startsWith("#"))
                 continue;
-            String[] kv = line.split("=");
+            String[] kv = line.split("=", 2);
             if (kv.length != 2)
                 continue;
             configPairs.put(kv[0], kv[1]);
@@ -65,6 +62,6 @@ public class ConfigLoader {
     public static void main(String[] args) {
         String configPath = "config";
         ConfigLoader loader = new ConfigLoader(configPath);
-        System.out.println(loader.getString("lda_max_words"));
+        System.out.println(loader.getString("mysql_url"));
     }
 }
