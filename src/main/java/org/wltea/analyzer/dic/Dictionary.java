@@ -192,7 +192,8 @@ public class Dictionary {
 		//建立一个主词典实例
 		_MainDict = new DictSegment((char)0);
 		//读取主词典文件
-        InputStream is = this.getClass().getClassLoader().getResourceAsStream(cfg.getMainDictionary());
+//        InputStream is = this.getClass().getClassLoader().getResourceAsStream(cfg.getMainDictionary());
+        InputStream is = cfg.getClass().getClassLoader().getResourceAsStream(cfg.getMainDictionary());
         if(is == null){
         	throw new RuntimeException("Main Dictionary not found!!!");
         }
@@ -237,8 +238,8 @@ public class Dictionary {
 				//读取扩展词典文件
 //				System.out.println("加载扩展词典：" + extDictName);
                 try {
-                    is = new FileInputStream(extDictName);
-    //				is = this.getClass().getClassLoader().getResourceAsStream(extDictName);
+//                    is = new FileInputStream(extDictName);
+    				is = this.getClass().getClassLoader().getResourceAsStream(extDictName);
                     //如果找不到扩展的字典，则忽略
                     if(is == null){
                         System.err.println("找不到扩展的字典");
@@ -287,11 +288,11 @@ public class Dictionary {
 			for(String extStopWordDictName : extStopWordDictFiles){
 //				System.out.println("加载扩展停止词典：" + extStopWordDictName);
 				//读取扩展词典文件
-//				is = this.getClass().getClassLoader().getResourceAsStream(extStopWordDictName);
+				is = this.getClass().getClassLoader().getResourceAsStream(extStopWordDictName);
 				//如果找不到扩展的字典，则忽略
 
 				try {
-                    is = new FileInputStream(extStopWordDictName);
+//                    is = new FileInputStream(extStopWordDictName);
 					BufferedReader br = new BufferedReader(new InputStreamReader(is , "UTF-8"), 512);
 					String theWord = null;
 					do {
