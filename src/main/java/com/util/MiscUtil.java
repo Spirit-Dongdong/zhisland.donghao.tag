@@ -9,14 +9,6 @@ import net.sourceforge.pinyin4j.format.exception.BadHanyuPinyinOutputFormatCombi
 import java.util.*;
 import java.util.Map.Entry;
 
-//import org.codehaus.jackson.JsonGenerator;
-//import org.codehaus.jettison.json.JSONArray;
-//import org.codehaus.jettison.json.JSONException;
-//import org.codehaus.jettison.json.JSONObject;
-//
-//import com.fasterxml.jackson.databind.ObjectMapper;
-
-
 public class MiscUtil {
 	
 	public static Map sortByValue(Map map, final boolean reverse) {
@@ -168,52 +160,10 @@ public class MiscUtil {
 
 	
 	public static void main(String[] args) throws BadHanyuPinyinOutputFormatCombination {
-//		String str = "元素：下载简历弹层-确定";
-//		System.out.println(getFirstSpell(str));
-//		System.out.println(getFullSpell(str));
-//		
-//		
-//		int count = myToInt("2,813,079");
-//		System.out.println(count);
-//
-//		
-//		Float array2[] = {1.1f,2.2f,3.0f,4.0f,5.3f};
-//		System.out.println(sum(array2));
-//		
-//		List<String> list = null;
-//		Collections.sort(list);
 
-		
-//		testJson();
 	}
 	
-//	public static void testJson() {
-//		try {
-//			JSONObject object = new JSONObject(TxtUtil.getFileContent("json"));
-//			JSONObject temp = object.getJSONObject("hits");
-//			JSONArray hits = temp.getJSONArray("hits");
-//			
-//			int length = hits.length();
-//			for (int i = 0; i < length; i++) {
-////				System.out.println(hits.get(i));
-//				ESEntity entity = new ESEntity(hits.getJSONObject(i));
-//				System.out.println(entity);
-//			}
-//			
-//			
-//			
-//			
-////			object.get("hits");
-//		} catch (JSONException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}	
-//		
-//		
-//		
-//	}
-
-	public static  float sum(Float[] array) {
+    public static  float sum(Float[] array) {
 		float sum = 0;
 		for (int i = 0; i < array.length; i++) {
 			sum += array[i];

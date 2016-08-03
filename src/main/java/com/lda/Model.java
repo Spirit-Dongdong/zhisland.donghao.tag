@@ -626,11 +626,11 @@ public class Model implements Serializable{
 			return false;
 		}
 		
-		System.out.println("Model loaded: " + "alpha: " + alpha + " | beta: " + beta + " | M: " + M + " | V: " + V);
-		System.out.println("\talpha:" + alpha);
-		System.out.println("\tbeta:" + beta);
-		System.out.println("\tM:" + M);
-		System.out.println("\tV:" + V);		
+//		System.out.println("Model loaded: " + "alpha: " + alpha + " | beta: " + beta + " | M: " + M + " | V: " + V);
+//		System.out.println("\talpha:" + alpha);
+//		System.out.println("\tbeta:" + beta);
+//		System.out.println("\tM:" + M);
+//		System.out.println("\tV:" + V);
 		
 		nw = new int[V][K];
 		for (w = 0; w < V; w++){
