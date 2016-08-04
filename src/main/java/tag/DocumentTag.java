@@ -97,13 +97,13 @@ public class DocumentTag {
         double[] dist = model.theta[0];
 
         TreeMap<Double, Integer> topicWeightTreeMap = new TreeMap<Double, Integer>();
-        HashMap<Integer, Double> topicWeight = new HashMap<>();
+        HashMap<Integer, Double> topicWeight = new HashMap<Integer, Double>();
         for (int i = 0; i < dist.length; i++) {
             topicWeightTreeMap.put(dist[i], i);
             topicWeight.put(i, dist[i]);
         }
 
-        ArrayList<Integer> indices = new ArrayList<>(topicWeightTreeMap.values());
+        ArrayList<Integer> indices = new ArrayList<Integer>(topicWeightTreeMap.values());
         for (int i = indices.size() - 1; i >= 0; i--) {
             if (wordCnt >= maxWords)
                 break;

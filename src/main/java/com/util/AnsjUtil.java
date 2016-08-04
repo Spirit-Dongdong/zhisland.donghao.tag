@@ -19,7 +19,7 @@ import java.util.*;
 
 public class AnsjUtil {
 
-	public static final Set<String> filter = new HashSet<>();
+	public static final Set<String> filter = new HashSet<String>();
 
 	public static Map<String, IndexReader> readerMap = new HashMap<String, IndexReader>();
 	private static final AnsjAnalysis ANALYZER = new AnsjAnalysis();

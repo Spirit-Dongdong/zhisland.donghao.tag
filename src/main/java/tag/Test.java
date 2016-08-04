@@ -15,7 +15,7 @@ public class Test {
 
     public static void washDict() {
         String output = "resources/new.dic";
-        Set<String> ws = new HashSet<>();
+        Set<String> ws = new HashSet<String>();
 
         String[] words = TxtUtil.getFileContent("resources/main2012.dic").split("\n");
         for (int i = 0; i < words.length; i++) {

@@ -64,7 +64,7 @@ public class LDAPredictor {
 
 
 
-        ArrayList<Integer> indices = new ArrayList<>(topicWeight.values());
+        ArrayList<Integer> indices = new ArrayList<Integer>(topicWeight.values());
         System.out.println(indices);
         for (int i = indices.size()-1; i >= 0; i--) {
             int idx = indices.get(i);
